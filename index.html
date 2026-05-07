@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Micropayment Test | One-Tap Access</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Smooth fade-in for frictionless feel */
+        body { animation: fadeIn 0.5s ease-in-out; }
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+    </style>
+</head>
+<body class="bg-gray-50 flex items-center justify-center min-h-screen">
+
+    <div class="bg-white p-8 rounded-2xl shadow-xl max-w-sm w-full text-center">
+        <div class="mb-6">
+            <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">Premium Content</span>
+        </div>
+        <h1 class="text-2xl font-bold text-gray-900 mb-2">Unlock the Secret</h1>
+        <p class="text-gray-500 mb-8 text-sm">Pay a tiny micropayment to instantly access the hidden content. Supports Apple Pay, Google Pay, and UPI.</p>
+        
+        <!-- REPLACE THE HREF WITH YOUR STRIPE/RAZORPAY PAYMENT LINK -->
+        <a href="https://buy.stripe.com/test_7sYeVde3rc28f8JgTbg7e00" 
+           class="block w-full text-white bg-blue-600 hover:bg-blue-700 font-medium rounded-lg text-lg px-5 py-4 text-center transition-all shadow-md hover:shadow-lg active:scale-95">
+           Pay Now with One-Tap
+        </a>
+        
+        <div class="mt-4 flex justify-center gap-3 opacity-60">
+            <!-- Icons for visual trust (Optional) -->
+            <span class="text-xs font-medium">🍎 Apple Pay</span>
+            <span class="text-xs font-medium">🇬 Google Pay</span>
+            <span class="text-xs font-medium">⚡ UPI</span>
+        </div>
+    </div>
+
+</body>
+</html>
